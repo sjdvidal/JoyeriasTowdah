@@ -1,0 +1,89 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fcfbff;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #f9f4ff, #fdfaff);
+    border-bottom: 1px solid #e8e2f0;
+  }
+  
+  .hero h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #6f42c1; /* morado elegante */
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    color: #7e6b91;
+  }
+  
+  .btn-primary {
+    background-color: #9b59b6;
+    border-color: #9b59b6;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #884ea0;
+    border-color: #884ea0;
+    color: #fff;
+  }
+  
+  .navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eae0f8;
+  }
+  
+  .navbar-brand {
+    color: #6f42c1 !important;
+  }
+  
+  footer {
+    background: #f7f3fc;
+    padding: 15px 0;
+    font-size: 0.95rem;
+    color: #8e7c9d;
+    border-top: 1px solid #e0d7ef;
+  }
+
+  /* Efecto en el botón cuando pasa el ratón (hover) */
+.btn:hover {
+    background-color: #6f42c1; /* Cambiar el color de fondo a morado */
+    transform: scale(1.1); /* Aumenta el tamaño del botón un 10% */
+    transition: all 0.3s ease; /* Hacer la animación suave */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Añadir una sombra suave */
+  }
+  
+  /* Opcional: puedes también agregar un cambio en el color del texto cuando pasa el ratón */
+  .btn:hover {
+    color: white; /* Cambiar el color del texto a blanco */
+  }
+
+  .parallax {
+    background-image: url('https://your-image-url.com/imagen-de-fondo.jpg'); /* Cambia esta URL por tu imagen */
+    height: 100vh; /* Hacemos que ocupe toda la altura de la ventana */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-size: cover; /* Hace que la imagen cubra toda el área */
+    background-attachment: fixed; /* Aquí se logra el efecto parallax */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  
