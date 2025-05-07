@@ -48,7 +48,7 @@ body {
   }
   
   .navbar-brand {
-    color: #6f42c1 !important;
+    color: #000000 !important;
   }
   
   footer {
@@ -85,5 +85,36 @@ body {
     color: white;
     text-align: center;
   }
+
+  .social-img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+  }
+
+  .social-img:hover {
+    transform: scale(1.1);
+  }
+
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 80%;
+    padding: 10px;
+    font-size: 24px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    color: white;
+  }
+  
   
   
