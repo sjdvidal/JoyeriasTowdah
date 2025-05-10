@@ -8,27 +8,49 @@ body {
   }
   
   .hero {
-    flex: 1;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(to right, #f9f4ff, #fdfaff);
-    border-bottom: 1px solid #e8e2f0;
+    padding: 100px 20px;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+
+    /* Imagen de fondo */
+    background-image: url('recursos/f3c321189231a3823634fbc22b3beae8.jpg'); /* cambia a tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
   }
-  
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* capa oscura encima */
+    z-index: 1;
+  }
+
+  .hero .container {
+    position: relative;
+    z-index: 2;
+  }
+
   .hero h1 {
     font-size: 3.2rem;
     font-weight: 700;
-    color: #000000; /* morado elegante */
+    color: #ffffff;
   }
-  
+
   .hero p {
     font-size: 1.3rem;
     margin-top: 20px;
-    color: #7e6b91;
+    color: #e5d7f7;
   }
+
   
   .btn-primary {
     background-color: #6f42c1;

@@ -56,17 +56,18 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <h1 data-aos="fade-up">Bienvenidos a Joyerías Towdah</h1>
-            <p data-aos="fade-right" data-aos-delay="200">Elegancia, distinción y belleza en cada detalle.</p>
-            <a data-aos="fade-left" href="https://wa.me/50240856716?text=¡Hola!%20Estoy%20interesado%20en%20sus%20joyas,%20me%20gustaría%20más%20información." 
-                target="_blank" 
-                class="btn btn-success d-inline-flex align-items-center gap-2">
-                <img src="recursos/whatsapp.png" alt="WhatsApp" style="width: 20px; height: 20px;">
-                ¡Escríbenos!
-            </a>
-        </div>
-    </section>
+		<div class="container">
+			<h1 data-aos="fade-up">Bienvenidos a Towdah Joyerías</h1>
+			<p data-aos="fade-right" data-aos-delay="200">Elegancia, distinción y belleza en cada detalle.</p>
+			<a data-aos="fade-left" href="https://wa.me/50240856716?text=¡Hola!%20Estoy%20interesado%20en%20sus%20joyas,%20me%20gustaría%20más%20información." 
+				target="_blank" 
+				class="btn btn-success d-inline-flex align-items-center gap-2">
+				<img src="recursos/whatsapp.png" alt="WhatsApp" style="width: 20px; height: 20px;">
+				¡Escríbenos!
+			</a>
+		</div>
+	</section>
+
 
     <section>
         <div class="container text-center my-5">
@@ -131,7 +132,7 @@
       
         <!-- Footer -->
         <footer class="text-center">
-          © 2025 Joyerías Towdah. Todos los derechos reservados.
+          © 2025 Towdah Joyerías. Todos los derechos reservados.
         </footer>
       
         <!-- Bootstrap JS -->
@@ -140,11 +141,27 @@
         <!-- AOS JS -->
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
         <script>
-        AOS.init({
-            duration: 1000,
-            easing  : 'ease-in-out',
-            once    : true
-        });
+			
+			AOS.init({
+				duration: 1000,
+				easing  : 'ease-in-out',
+				once    : true
+			});
+
+			window.addEventListener('scroll', function () {
+				const hero = document.querySelector('.hero::before') || document.querySelector('.hero');
+
+				if (!hero) return;
+
+				// Usamos el scroll para crear el efecto parallax
+				const scrollPosition = window.scrollY;
+				const parallax = document.querySelector('.hero::before'); // No se puede acceder a pseudo-elementos directamente
+
+				// Solución: Aplicamos el efecto al fondo directamente con style
+				const heroEl = document.querySelector('.hero');
+				heroEl.style.backgroundPosition = `center ${scrollPosition * 0.4}px`;
+			});
+
         </script>
         <!-- Botón flotante de WhatsApp -->
         <a href="https://wa.me/50240856716?text=¡Hola!%20Estoy%20interesado%20en%20sus%20joyas,%20me%20gustaría%20más%20información." 
