@@ -1,0 +1,64 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fcfbff;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+/* Barra Inicial */
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eae0f8;
+  }
+  
+  .navbar-brand {
+    color: #020202 !important; /* dorado elegante */
+    font-weight: 700;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(212, 175, 55, 0.15);
+    transition: color 0.3s;
+  }
+
+  .navbar-brand:hover {
+    color: #bfa14a !important;
+  }
+
+  /* Footer */
+
+  footer {
+    background: #f7f3fc;
+    padding: 15px 0;
+    font-size: 0.95rem;
+    color: #8e7c9d;
+    border-top: 1px solid #e0d7ef;
+  }
+
+  /* Whatsapp */
+
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    color: white;
+  }
